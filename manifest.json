@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "PubliChrome",
+    "version": "1.0",
+    "description": "Track how many PubliBikes are near you're main station.",
+    "icons": {
+      "128": "/images/bicycle-128.png"
+    },
+    "action": {
+      "default_popup": "popup.html", 
+      "default_icon": {
+        "128": "/images/bicycle-128.png"
+      }
+    },
+    "permissions": [
+        "activeTab",
+        "webRequest"
+      ],
+    "host_permissions": [
+        "https://api.publibike.ch/v1/public/stations/119"
+    ]
+  }
+  
